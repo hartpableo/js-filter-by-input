@@ -18,14 +18,16 @@
             <div class="container">
                 <h2 class="sr-only">input keyword to filter here</h2>
                 <form action="#" method="post" class="grid grid-cols-4 gap-1 lg:gap-3 items-stretch min-h-[3.5rem]">
-                    <input class="col-span-3 px-3 border border-solid border-green-900 border-2" type="text" name="Filter" id="filter" placeholder="Type keyword here...">
-                    <button class="col-span-1 bg-gray-300 font-medium border border-solid border-red-900 border-2 hover:bg-red-900 hover:text-white transition" type="submit">Filter</button>
+                    <input class="col-span-3 px-3 border border-solid border-green-900 border-2" type="text" name="Filter" id="filter" placeholder="Search menu...">
+                    <button id="submit" class="col-span-1 bg-gray-300 font-medium border border-solid border-red-900 border-2 hover:bg-red-900 hover:text-white transition" type="submit">Filter</button>
                 </form>
             </div>
         </section>
         <section>
             <div class="container">
-                <!-- display menu here -->
+                <div id="menu-display" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+                    <!-- Menu display here -->
+                </div>
             </div>
         </section>
     </main>

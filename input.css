@@ -7,3 +7,27 @@
 .container {
     @apply mx-auto px-4;
 }
+
+.card--menu {
+    @apply p-2 text-left rounded-md bg-white border border-solid border-gray-600;
+}
+
+.card__image {
+    @apply w-full h-[200px] relative overflow-hidden mb-3 rounded-md;
+}
+
+.card__image img {
+    @apply absolute inset-0 object-cover w-full h-full;
+}
+
+.card--menu h3 {
+    @apply text-lg font-semibold text-blue-700 leading-none;
+}
+
+.menu-name {
+    @apply mb-1 text-sm;
+}
+
+.price {
+    @apply font-bold text-lg;
+}
