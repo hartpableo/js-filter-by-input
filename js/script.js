@@ -7,7 +7,7 @@ const submit = document.getElementById('submit')
 fetch('https://free-food-menus-api-production.up.railway.app/our-foods')
     .then(res => res.json())
     .then(data => {
-        let html = '';
+        let html = ''
         data.forEach(user => {
             html += `
             <div class="card card--menu" data-menu-name="${user.id}">
@@ -21,7 +21,7 @@ fetch('https://free-food-menus-api-production.up.railway.app/our-foods')
             </div>
             `
         })
-        menu.innerHTML = html;
+        menu.innerHTML = html
     })
 
 // Submit
@@ -38,7 +38,7 @@ input.addEventListener('keyup', () => {
 // Filter
 function filterItems() {
     // Get the input value typed
-    const value = input.value.toLowerCase();
+    const value = input.value.toLowerCase()
 
     // Get all menu items
     let menuItems = menu.querySelectorAll('.card--menu')
@@ -52,10 +52,10 @@ function filterItems() {
         // Check if the input value is present in the text
         if (menuName.indexOf(value) !== -1) {
             // Show the item
-            menuItems[i].style.display = "";
+            menuItems[i].style.display = ""
         } else {
             // Hide the item
-            menuItems[i].style.display = "none";
+            menuItems[i].style.display = "none"
         }
 
     }
